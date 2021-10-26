@@ -733,19 +733,6 @@ nav {
     top: 18px;
     left: 10px;
 }
-/* @media (max-width: 768px) {
-    .subscribe .overl .container form {
-        flex-direction: column;
-        align-items: center;
-    }
-    .subscribe .overl .container form .email {
-        flex-basis: 50px;
-        width: 100%;
-    }
-    .subscribe .overl .container form .subs-btn {
-        margin-top: 5px;
-    }
-} */
 .subscribe .overl .container form .subs-btn {
     padding: 20px 40px;
     background: var(--main-blue);
@@ -754,5 +741,60 @@ nav {
     color: white;
     text-transform: uppercase;
     font-size: 1em;
+}
+/**/
+
+/**/
+.contacts-info .container {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-info .side-info {
+    flex-basis: 25%;
+    /* margin-left: 60px; */
+}
+.contacts-info form {
+    flex-basis: 70%;
+}
+@media (max-width: 768px) {
+    .contacts-info .container {
+        flex-direction: column;
+    }
+    .contacts-info .side-info {
+        order: -1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.contacts-info form .main-input{
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+.contacts-info form textarea.main-input {
+    height: 200px;
+}
+.contacts-info form input:last-child {
+    width: 160px;
+    margin: 0 0 20px auto;
+    background-color: var(--main-blue);
+    color: #fff;
+    font-size: 100%;
+}
+.contacts-info .side-info .phons {
+    margin-bottom: 80px;
+}
+.contacts-info .side-info .phons h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.contacts-info .side-info p {
+    color: var(--gray);
+}
+.contacts-info .side-info .location h2 {
+    margin: 20px 0 20px;
+    font-size: 18px;
 }
 /**/
